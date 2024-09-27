@@ -1,0 +1,3 @@
+gensim
+openai-whisper
+pytube
