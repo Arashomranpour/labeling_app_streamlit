@@ -59,6 +59,4 @@ Once the app is running, users can:
 
 Contributions are welcome! Feel free to fork the repository, submit issues, or create pull requests to help enhance the app.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
