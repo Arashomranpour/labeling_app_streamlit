@@ -1,6 +1,8 @@
 # Labeling App with Streamlit
 
 This project implements a simple and interactive labeling app using Streamlit. The app allows users to label datasets in an intuitive, web-based interface. It’s ideal for tasks such as data annotation, categorization, and labeling for machine learning projects.
+![image](https://github.com/user-attachments/assets/eacb2bdd-a5eb-458d-ab54-e51499d6e05b)
+![image](https://github.com/user-attachments/assets/350dbf39-369b-46cf-8c2c-050ffbcd7978)
 
 ## Features
 
