@@ -1,64 +1,68 @@
-# Labeling App with Streamlit
+<div align="center">
 
-This project implements a simple and interactive labeling app using Streamlit. The app allows users to label datasets in an intuitive, web-based interface. It’s ideal for tasks such as data annotation, categorization, and labeling for machine learning projects.
-![image](https://github.com/user-attachments/assets/eacb2bdd-a5eb-458d-ab54-e51499d6e05b)
-![image](https://github.com/user-attachments/assets/350dbf39-369b-46cf-8c2c-050ffbcd7978)
+# 🏷️ Labeling App with Streamlit
 
-## Features
+**Automatically label text, YouTube videos and CSV data with topic modeling - in a simple web interface.**
 
-- **User-friendly Interface**: Built with Streamlit to provide an easy-to-use interface for labeling tasks.
-- **Dataset Loading**: Allows users to load datasets for labeling directly through the app.
-- **Real-time Updates**: Automatically updates labels as users interact with the interface.
-- **Flexible Usage**: Can be adapted to various labeling tasks such as classification, tagging, or annotation.
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![Whisper](https://img.shields.io/badge/OpenAI_Whisper-412991?logo=openai&logoColor=white)
+![Gensim](https://img.shields.io/badge/Gensim-LDA-informational)
 
-## Project Structure
+</div>
 
-- `app.py`: The main Streamlit app file that handles the UI and labeling logic.
-- `requirements.txt`: List of Python dependencies required to run the app.
-- `README.md`: Documentation for the project.
+---
 
-## Installation and Setup
+![App screenshot](https://github.com/user-attachments/assets/eacb2bdd-a5eb-458d-ab54-e51499d6e05b)
+![App screenshot](https://github.com/user-attachments/assets/350dbf39-369b-46cf-8c2c-050ffbcd7978)
 
-To set up and run this app locally, follow these steps:
+## ✨ Features
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/Arashomranpour/labeling_app_streamlit.git
-    cd labeling_app_streamlit
-    ```
+Choose a labeling mode from the sidebar:
 
-2. **Install the required dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+| Mode | What it does |
+|---|---|
+| 📝 **On Text** | Paste text, run **LDA topic modeling** (Gensim) and get topic labels based on a built-in insurance keyword list |
+| 🎬 **On Video** | Enter a YouTube URL → download the audio → transcribe it with **OpenAI Whisper** → label the transcript |
+| 📊 **On CSV** | Upload a CSV file and analyze its text content |
 
-3. **Run the Streamlit app**:
-    Start the app with the following command:
-    ```bash
-    streamlit run app.py
-    ```
+## 🚀 Getting Started
 
-## Requirements
+### Prerequisites
 
-- Python 3.8 or higher
-- `streamlit`: Framework for building interactive web apps.
-- Any additional libraries required for dataset manipulation (if needed).
+- Python 3.8+
+- [FFmpeg](https://ffmpeg.org/) installed (required by Whisper)
 
-## Usage
+### Install & run
 
-Once the app is running, users can:
-- Load datasets for labeling through the app interface.
-- Label data interactively using the provided UI.
-- Export labeled datasets for further processing or model training.
+```bash
+git clone https://github.com/Arashomranpour/labeling_app_streamlit.git
+cd labeling_app_streamlit
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-## Future Enhancements
+> ℹ️ `heapq` in `requirements.txt` is part of the Python standard library and does not need to be installed separately.
 
-- **Enhanced Dataset Support**: Add support for more file formats and dataset types.
-- **Multi-user Functionality**: Allow multiple users to label datasets simultaneously.
-- **Customizable Labels**: Enable users to define and modify label sets directly within the app.
+## 📁 Project Structure
 
-## Contributing
+```
+.
+├── app.py              # Streamlit UI, topic modeling and transcription
+├── requirements.txt
+└── README.md
+```
 
-Contributions are welcome! Feel free to fork the repository, submit issues, or create pull requests to help enhance the app.
+## 🗺️ Roadmap
 
+- Support more file formats and dataset types
+- Multi-user labeling
+- Customizable label sets
 
+## 🛠️ Tech Stack
+
+`Streamlit` · `Gensim` · `OpenAI Whisper` · `pytube` · `pandas` · `NumPy`
+
+## 🤝 Contributing
+
+Contributions are welcome - fork the repo, open an issue or submit a pull request.

@@ -1,7 +1,6 @@
 gensim
 openai-whisper
 pytube
-heapq
 pandas
 numpy
 streamlit
